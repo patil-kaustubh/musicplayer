@@ -1,2 +1,11 @@
 # musicplayer
 Case study of a music player using core java concepts. For this project, I used Eclipse IDE. Created project, packages, classes and interface as per requirement. Used core java concepts like Inheritance, Decision making statements, Looping statements, Scanner, Object creation, etc. Please have a look at my project and all suggestions, and feedback is welcome.
+This is a Java program that implements a basic music player with different menus for playing, adding/removing, and updating songs. The program consists of six classes and an interface:
+
+Menu: an interface that defines three methods: printMenu() for displaying the menu, getUserInput() for getting user input, and executeUserAction(int userChoice) for executing the user's chosen action.
+Utility: a utility class that contains a Scanner object and a method for getting user input from the Scanner.
+MainMenu: a class that implements the Menu interface and defines the main menu of the program. It has a boolean variable subMenuLoop that is set to true when a sub-menu is entered, and a switch statement in the executeUserAction() method that creates instances of sub-menus depending on the user's choice and enters a loop to display the sub-menu until the user chooses to go back.
+AddRemoveSongMenu, UpdateSongMenu, and PlaySongMenu: classes that implement the Menu interface and define the sub-menus for adding/removing, updating, and playing songs, respectively. Each sub-menu has its own switch statement in the executeUserAction() method that performs different actions depending on the user's choice.
+The program starts by creating an instance of the MainMenu class and entering a loop that displays the main menu and waits for user input. When the user chooses a menu option, the executeUserAction() method of the MainMenu class creates an instance of the corresponding sub-menu class and enters a loop to display the sub-menu and wait for user input until the user chooses to go back. When the user goes back from a sub-menu, the loop in the MainMenu class resumes and displays the main menu again.
+
+Overall, this program demonstrates the use of interfaces, classes, objects, and control structures in Java programming, as well as the use of a Scanner object for getting user input from the console.
